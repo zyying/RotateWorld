@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f88a3">
+
+
+    <Button
+        android:id="@+id/control_previous_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上一页" />
+
+    <Button
+        android:id="@+id/control_next_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/control_previous_view"
+        android:text="下一页" />
+
+    <Button
+        android:id="@+id/control_next_next_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/control_next_view"
+        android:text="下两页" />
+
+    <Button
+        android:id="@+id/control_another_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/control_next_next_view"
+        android:text="动态切换一页" />
+
+    <RelativeLayout
+        android:id="@+id/rotate_world_parent"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true">
+
+        <com.example.rotateworld.view.RotateWorld
+            android:id="@+id/rotate_world_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
