@@ -44,10 +44,6 @@ public class HouseView extends RelativeLayout implements OnHouseShowListener {
             mainView.setLayoutParams(params);
             contentLayout.addView(mainView);
         }
-        RelativeLayout.LayoutParams params = (LayoutParams) contentLayout.getLayoutParams();
-        params.height = RotateWorldController.getHouseHeight();
-        contentLayout.setPadding(0, contentLayout.getPaddingTop() + RotateWorld.SHADER_WIDTH, 0, 0);
-        contentLayout.setLayoutParams(params);
     }
 
     protected void initViews() {
